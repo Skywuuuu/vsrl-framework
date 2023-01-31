@@ -23,6 +23,9 @@ Getting these braking distance calculations right is non-trivial. Getting safety
   * `rl`: reinforcement learning agents and environments. We use the RL implementations from [`rlpyt`].
   * `spaces`: symbolic state spaces
   * `symmap`: for mapping from non-symbolic inputs (e.g. images) into a symbolic state space (e.g. object locations) over which safety constraints can be expressed
+    * data.py: 处理toml格式，用于生成图片（比如将背景图和安全相关的图合成），提供torch.utils.data.Dataset
+    * detectors:
+      * qatm.py: Quality-Aware Template Matching
   * `training`: functions for training the detector / RL agents
   * `utils`: miscellaneous code
   * `verifier`: interfaces to formal methods tools that can be used to check the correctness of constraints, monitor modeling assumptions, etc.

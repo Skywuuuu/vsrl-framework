@@ -54,7 +54,7 @@ def maybe_convert_terms(func: F) -> F:
 
 
 class Node:
-    # TODO explain the object protocols for setting and using AST state
+    # TODO explain the object protocols for setting and using AST (Abstract syntax tree) state
     def children(self) -> list:
         children = self._compute_children()
         assert isinstance(children, list), "found a non-list: %s for %s" % (
